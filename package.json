@@ -1,0 +1,23 @@
+{
+  "name": "gulu",
+  "version": "1.0.0",
+  "description": "咕噜  一个Vue UI组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lidongyang0929/gulu.git"
+  },
+  "keywords": [
+    "vue",
+    "ui"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lidongyang0929/gulu/issues"
+  },
+  "homepage": "https://github.com/lidongyang0929/gulu#readme"
+}
