@@ -1,7 +1,7 @@
 {
   "name": "gulu",
   "version": "1.0.0",
-  "description": "咕噜  一个Vue UI组件",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,14 +10,23 @@
     "type": "git",
     "url": "git+https://github.com/lidongyang0929/gulu.git"
   },
-  "keywords": [
-    "vue",
-    "ui"
-  ],
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lidongyang0929/gulu/issues"
   },
-  "homepage": "https://github.com/lidongyang0929/gulu#readme"
+  "homepage": "https://github.com/lidongyang0929/gulu#readme",
+  "dependencies": {
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.3"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.6.0",
+    "parcel-bundler": "^1.12.3",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common.js"
+  }
 }
