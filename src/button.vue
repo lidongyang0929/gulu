@@ -1,6 +1,7 @@
 <template>
 <button class="g-button" :class="{[`icon-${iconPosition}`]:true}">
-   <g-icon v-if="icon" :name="icon"> </g-icon>
+   <g-icon v-if="icon" :name="icon"></g-icon>
+   <g-icon class="loading" name="loading"></g-icon>
     <div class="wrapper">
    <slot></slot></div>
 </button> 
@@ -17,15 +18,16 @@
             border-radius: var(--border-radius);
             border: 1px solid var(--border-color);
             background: var(--button-bg);
-            .g–icon{order: 1 ;margin-right: .1em}
+            g–icon{order: 1 ;margin-right: .1em}
             .wrapper{order:2}
+            .loading{ animation: spin 2s infinite linear}
             
            
         &.icon-right{
              .wrapper{
                     order:1;   
                 }
-                .g-icon{
+                icon{
                     order:2;
                     margin-left: .1em;
                     margin-right: 0;
@@ -41,6 +43,10 @@
         }
         &:focus{
             outline: none;
+        }
+        @keyframes spin{
+            0%{transform: rotate(0deg)}
+            100%{transform: rotate(369deg)}
         }
         
 
