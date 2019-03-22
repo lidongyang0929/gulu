@@ -18,7 +18,8 @@
     order: 1; }
   .g-button.icon-right .icon {
     order: 2;
-    margin-left: .1em; }
+    margin-left: .1em;
+    margin-right: 0; }
   .g-button:hover {
     border-color: var(--border-color-hover); }
   .g-button:active {
