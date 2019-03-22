@@ -17,7 +17,7 @@
             border-radius: var(--border-radius);
             border: 1px solid var(--border-color);
             background: var(--button-bg);
-            .icon{order: 1 ;margin-right: .1em}
+            .g–icon{order: 1 ;margin-right: .1em}
             .wrapper{order:2}
             
            
@@ -25,7 +25,7 @@
              .wrapper{
                     order:1;   
                 }
-                .icon{
+                .g-icon{
                     order:2;
                     margin-left: .1em;
                     margin-right: 0;
