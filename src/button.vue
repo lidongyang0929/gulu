@@ -1,5 +1,5 @@
 <template>
-<button class="g-button" :class="{[`icon-${iconPosition}`]:true}" 
+<button class="g-button" :class="`icon-${iconPosition}`" 
 @click="$emit('click')">
    <g-icon v-if="icon && !loading" :name="icon" class="icon"></g-icon>
    <g-icon class="loading icon" v-if="loading" name="loading"></g-icon>
@@ -47,7 +47,7 @@
         }
         @keyframes spin{
             0%{transform: rotate(0deg)}
-            100%{transform: rotate(369deg)}
+            100%{transform: rotate(360deg)}
         }
         
 
