@@ -1,6 +1,6 @@
 <template>
     <svg class="g-icon">
-       <use v-bind:xlink:href="`#icon-{name}`"></use>
+       <use :xlink:href="`#icon-${name}`"></use>
     </svg>
 </template>
 
@@ -8,7 +8,9 @@
 
 
 <style>
-  .g-icon{order: 1 ;margin-right: .1em}
+  .g-icon{
+           width: 1em; height: 1em;
+       }
 </style>
 
 
