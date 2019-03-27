@@ -16,7 +16,8 @@ new Vue({
     data:{
         loading1:false,
         loading2:false,
-        loading3:false
+        loading3:false,
+        message:'双向绑定'
     },
     methods:{
         inputChange(e){

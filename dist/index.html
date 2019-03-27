@@ -19,7 +19,8 @@
     <style>.icon{
            width: 1em; height: 1em;
        }
-       .box{ margin: 20px}</style>
+       .box{ margin: 20px}
+       p{font-size: 14px;padding-left: 8px;}</style>
 <link rel="stylesheet" href="/app.a6a4d504.css"></head>
 <body>
         
@@ -39,6 +40,11 @@
     </div>
       <div class="box">
          <g-input error="姓名不能少于两个字"></g-input>
+      </div>
+      <div class="box">
+          <g-input v-model="message"></g-input>
+          <p>{{message}}</p>
+          <button @click="message+=1">+1</button>
       </div>
       
      

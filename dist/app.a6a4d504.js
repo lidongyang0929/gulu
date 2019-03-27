@@ -12803,13 +12803,13 @@ exports.default = _default;
             return _vm.$emit("change", $event)
           },
           input: function($event) {
-            return _vm.$emit("input", _vm.$evevt)
+            return _vm.$emit("input", $event.target.value)
           },
           focus: function($event) {
-            return _vm.$emit("focus", _vm.$evevt)
+            return _vm.$emit("focus", $event)
           },
           blur: function($event) {
-            return _vm.$emit("blur", _vm.$evevt)
+            return _vm.$emit("blur", $event)
           }
         }
       }),
@@ -12888,7 +12888,8 @@ new _vue.default({
   data: {
     loading1: false,
     loading2: false,
-    loading3: false
+    loading3: false,
+    message: '双向绑定'
   },
   methods: {
     inputChange: function inputChange(e) {
@@ -12924,7 +12925,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60442" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62159" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
