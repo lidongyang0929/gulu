@@ -46,15 +46,18 @@ describe('Input', ()=>{
       vm.$destroy()
 
  })
-   it('支持change事件',()=>{
+   it('支持change/input/focus/blur事件',()=>{
+       ['input','change','focus','blur'].forEach((eventName)=>{
        const Constructor =Vue.extend(Input)
        const vm = new Constructor({}).$mount()
        const callback = sinon.fake()
-       vm.$on('change',callback)
-       let event = new Event('change')
+       vm.$on(eventName,callback)
+       let event = new Event(eventName)
        let inputElement = vm.$el.querySelector('input')
        inputElement.dispatchEvent(event)
        expect(callback).to.have.been.calledWith(event)
+       })
+       
    })
 
 

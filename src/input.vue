@@ -2,9 +2,9 @@
   <div class= "wrapper" :class="{error}">
     <input type="text" :value="value" :disabled="disabled"
     @change="$emit('change',$event)"
-    @input="$emit('input',$evevt)"
-    @focus="$emit('focus',$evevt)"
-    @blur="$emit('blur',$evevt)"></input>
+    @input="$emit('input',$event)"
+    @focus="$emit('focus',$event)"
+    @blur="$emit('blur',$event)"></input>
     <template v-if="error">
     <icon name='error' class="icon-error"></icon>
     <span class="errorMessage">{{error}}</span>
