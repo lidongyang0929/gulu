@@ -18,11 +18,13 @@
     }</style>
     <style>.icon{
            width: 1em; height: 1em;
-       }</style>
+       }
+       .box{ margin: 20px}</style>
 <link rel="stylesheet" href="/app.a6a4d504.css"></head>
 <body>
         
   <div id="app">
+      <div class="box">
       <g-button :loading="loading1" @click="loading1 = !loading1">设置</g-button>
       <g-button icon="shezhi" :loading="loading2" @click="loading2 = !loading2">设置</g-button>
       <g-button icon="shezhi" icon-position="right" :loading="loading3" @click="loading3 = !loading3">设置</g-button>
@@ -30,9 +32,12 @@
       <g-button icon="left">上一页</g-button>
       <g-button icon="right" icon-position="right">下一页</g-button>
       </g-button-group>
-      <g-input value="张三"></g-input>
+    </div>
+    <div class="box">
+      <g-input value="张三" @change="inputChange"></g-input>
       <g-input value="李四" disabled=""></g-input>
-      <div>
+    </div>
+      <div class="box">
          <g-input error="姓名不能少于两个字"></g-input>
       </div>
       
